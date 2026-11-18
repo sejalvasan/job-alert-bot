@@ -130,7 +130,12 @@ def fetch_workday(c: dict, search_terms: list[str]) -> list[Job]:
     seen, jobs = set(), []
     for term in search_terms:
         body = {"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": term}
-        r = requests.post(api, json=body, headers=HEADERS, timeout=TIMEOUT)
+        r = requests.post(api, json=body, timeout=TIMEOUT, headers={
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+                          "(KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+            "Accept": "application/json", "Content-Type": "application/json",
+            "Accept-Language": "en-US", "Origin": f"https://{host}",
+            "Referer": f"https://{host}/{site}"})
         r.raise_for_status()
         for j in r.json().get("jobPostings", []):
             path = j.get("externalPath", "")
@@ -395,9 +400,15 @@ def run(cfg: dict, dry_run: bool) -> int:
             jobs = fetch_company(c, cfg)
             checked += 1
             state["errors"].pop(cid, None)
+            state.setdefault("error_detail", {}).pop(cid, None)
         except Exception as e:  # one broken board must never stop the rest
             errors.append(f"{c.get('name')}: {type(e).__name__}")
             state["errors"][cid] = state["errors"].get(cid, 0) + 1
+            detail = f"{type(e).__name__}: {e}"
+            resp = getattr(e, "response", None)
+            if resp is not None:
+                detail += f" | body: {resp.text[:200]}"
+            state.setdefault("error_detail", {})[cid] = detail[:400]
             print(f"  ! {c.get('name')}: {e}")
             continue
 
