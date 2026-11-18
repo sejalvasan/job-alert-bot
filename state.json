@@ -5,9 +5,9 @@
   "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 1,
-  "workday:NVIDIA": 1,
-  "workday:Salesforce": 1
+  "workday:Adobe": 2,
+  "workday:NVIDIA": 2,
+  "workday:Salesforce": 2
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -30,7 +30,7 @@
   "workday:Adobe",
   "jobright:Jobright"
  ],
- "last_heartbeat": "2026-11-17",
+ "last_heartbeat": "2026-11-18",
  "seen": {
   "amazon:Amazon:10499684": "2026-11-18T02:33:09+00:00",
   "amazon:Amazon:10509639": "2026-11-18T02:33:09+00:00",
@@ -62,8 +62,10 @@
   "jobright:Fanatics:6af9ae59a68705504beba39f": "2026-11-18T03:41:40+00:00",
   "jobright:Fanatics:6af9ae5df015f35e7418dc15": "2026-11-18T03:41:40+00:00",
   "jobright:FieldPulse:6af7958fe3d8d612bf425236": "2026-11-18T03:41:40+00:00",
+  "jobright:GoFundMe:6ad80a13e4b94611ab84b3e2": "2026-11-18T20:33:58+00:00",
   "jobright:Great American Insurance Group:6afb66ea5305ed998d91d700": "2026-11-18T03:41:40+00:00",
   "jobright:Great American Insurance Group:6afc826963fb67454cf79329": "2026-11-18T03:41:40+00:00",
+  "jobright:HUB International:6afddc30f3e7976cc610970c": "2026-11-18T20:33:58+00:00",
   "jobright:Hewlett Packard Enterprise:6a91ddb79864261ccd29f642": "2026-11-18T03:41:40+00:00",
   "jobright:Holland America Line:6afb217f04af1c9f075c426b": "2026-11-18T03:41:40+00:00",
   "jobright:Holland America Line:6afb218b484fef921e047d4a": "2026-11-18T03:41:40+00:00",
@@ -112,6 +114,7 @@
   "jobright:Uber:6afcbcc32ac165125e4cc044": "2026-11-18T03:41:40+00:00",
   "jobright:Vertiv:6a8cb5a225fc4e7ae3dba124": "2026-11-18T03:41:40+00:00",
   "jobright:Zebra Technologies:6adfcb9e5dc7953215a43088": "2026-11-18T03:41:40+00:00",
+  "jobright:ai.moms:6afda6d126d1f35210ca64fa": "2026-11-18T20:33:58+00:00",
   "jobright:apexanalytix:6afcc6712ac165125e4cc701": "2026-11-18T03:41:40+00:00",
   "lever:Palantir:2ad0ab10-34c3-410d-883b-8052864a95cd": "2026-11-18T02:33:09+00:00",
   "lever:Palantir:315f695d-04d1-4a9a-848e-cb2bec7a997e": "2026-11-18T02:33:09+00:00",
@@ -128,6 +131,7 @@
   "sig:addepar|technical product management intern adx summer 2027|new york city metropolitan area": "2026-11-18T03:41:40+00:00",
   "sig:addepar|technical product management intern adx|new york": "2026-11-18T03:41:40+00:00",
   "sig:adobe|2027 mba intern product manager|san jose": "2026-11-18T03:41:40+00:00",
+  "sig:ai moms|ai product operations intern|new york": "2026-11-18T20:33:58+00:00",
   "sig:amazon|2027 amazon leadership accelerator ala product manager internship|seattle": "2026-11-18T03:41:40+00:00",
   "sig:amazon|product manager technical pmt intern summer 2027|seattle": "2026-11-18T02:33:09+00:00",
   "sig:apexanalytix|product management devops intern summer 2027|greensboro": "2026-11-18T03:41:40+00:00",
@@ -149,11 +153,13 @@
   "sig:fanatics|summer 2027 internship product intern|new york": "2026-11-18T03:41:40+00:00",
   "sig:fanatics|summer 2027 internship product management intern|seattle": "2026-11-18T03:41:40+00:00",
   "sig:fieldpulse|product intern|dallas": "2026-11-18T03:41:40+00:00",
+  "sig:gofundme|mba product management internship summer 2027|san francisco": "2026-11-18T20:33:58+00:00",
   "sig:great american insurance group|technical product management intern summer 2027|cincinnati": "2026-11-18T03:41:40+00:00",
   "sig:great american insurance group|underwriting product management intern year round|cincinnati": "2026-11-18T03:41:40+00:00",
   "sig:hewlett packard enterprise|product management intern master s mba|spring": "2026-11-18T03:41:40+00:00",
   "sig:holland america line|intern ecommerce product intern|fort lauderdale": "2026-11-18T03:41:40+00:00",
   "sig:holland america line|intern product management pcl|fort lauderdale": "2026-11-18T03:41:40+00:00",
+  "sig:hub international|ai product analyst intern|chicago": "2026-11-18T20:33:58+00:00",
   "sig:ice|summer internship program 2027 product strategy intern|jacksonville": "2026-11-18T03:41:40+00:00",
   "sig:idme|summer intern 2027 product intern|mountain view": "2026-11-18T12:13:04+00:00",
   "sig:koch engineered solutions|molex product management internship 2027 aerospace defense solutions|georgetown": "2026-11-18T03:41:40+00:00",
