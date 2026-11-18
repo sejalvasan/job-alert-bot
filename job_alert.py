@@ -55,6 +55,14 @@ class Job:
     def key(self) -> str:
         return f"{self.source}:{self.company}:{self.job_id}"
 
+    @property
+    def sig(self) -> str:
+        """Same role seen via two sources (e.g. Coinbase feed + Jobright) → same signature."""
+        norm = lambda x: re.sub(r"[^a-z0-9]+", " ", x.lower()).strip()
+        loc = re.sub(r"^\s*(hybrid|remote|on[- ]?site|in[- ]office)\s*[-–:]\s*", "", self.location or "", flags=re.I)
+        city = norm(loc.split(",")[0].split(";")[0])
+        return f"sig:{norm(self.company)}|{norm(self.title)}|{city}"
+
 
 # ─────────────────────────── fetchers ───────────────────────────
 
@@ -153,6 +161,39 @@ def fetch_amazon(c: dict) -> list[Job]:
     return jobs
 
 
+_MD_LINK = re.compile(r"\[([^\]]+)\]\(([^)\s]+)\)")
+
+
+def fetch_jobright(c: dict) -> list[Job]:
+    """Jobright's public daily internship list on GitHub (a Markdown table in the README)."""
+    repo = c.get("repo", "jobright-ai/2026-Product-Management-Internship")
+    branch = c.get("branch", "master")
+    r = requests.get(f"https://raw.githubusercontent.com/{repo}/{branch}/README.md",
+                     headers={"User-Agent": HEADERS["User-Agent"]}, timeout=TIMEOUT)
+    r.raise_for_status()
+    jobs, last_company = [], ""
+    for line in r.text.splitlines():
+        if not line.startswith("| "):
+            continue
+        cells = [x.strip() for x in line.strip().strip("|").split("|")]
+        if len(cells) < 5 or cells[0] in ("Company",) or cells[0].startswith("---"):
+            continue
+        comp_cell, title_cell, location, _model, posted = cells[:5]
+        if comp_cell == "↳":
+            company = last_company
+        else:
+            m = _MD_LINK.search(comp_cell)
+            company = (m.group(1) if m else comp_cell).strip("* ")
+            last_company = company
+        m = _MD_LINK.search(title_cell)
+        if not m:
+            continue
+        title, url = m.group(1).strip(), m.group(2).split("?")[0]
+        jid = url.rstrip("/").rsplit("/", 1)[-1]
+        jobs.append(Job(company, "jobright", jid, title, location, url, posted))
+    return jobs
+
+
 def workday_search_terms(cfg: dict) -> list[str]:
     # Workday has no "list everything" call, so we search a few plain-English terms.
     return cfg.get("workday_search_terms") or [
@@ -173,6 +214,8 @@ def fetch_company(c: dict, cfg: dict) -> list[Job]:
         return fetch_workday(c, workday_search_terms(cfg))
     if src == "amazon":
         return fetch_amazon(c)
+    if src == "jobright":
+        return fetch_jobright(c)
     raise ValueError(f"Unknown source '{src}' for {c.get('name')}")
 
 
@@ -185,6 +228,7 @@ class Matcher:
         self.levels = comp(f.get("levels"))
         self.excl_titles = comp(f.get("exclude_titles"))
         self.excl_locs = [s.lower() for s in (f.get("exclude_locations") or [])]
+        self.us_only = f.get("us_only", False)
 
     def __call__(self, job: Job) -> bool:
         t = job.title
@@ -198,7 +242,30 @@ class Matcher:
         # Titles often carry the location too, e.g. "Intern (London)".
         if any(x in loc or x in t.lower() for x in self.excl_locs):
             return False
+        if self.us_only and job.location and not is_us(job.location):
+            return False
         return True
+
+
+_US_STATES = (
+    "alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|"
+    "hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|"
+    "michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|"
+    "new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|"
+    "rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|"
+    "west virginia|wisconsin|wyoming|district of columbia"
+)
+_US_NAMES_RE = re.compile(rf"\b({_US_STATES})\b|\b(usa|united states|remote)\b|d\.c\.", re.I)
+# State codes and "US" are matched case-sensitively so words like ", in" don't count.
+_US_CODES_RE = re.compile(
+    r",\s*(A[KLRZ]|C[AOT]|D[CE]|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|N[CDEHJMVY]|O[HKR]|PA|RI"
+    r"|S[CD]|T[NX]|UT|V[AT]|W[AIVY])\b|\bU\.?S\.?A?\b"
+)
+
+
+def is_us(location: str) -> bool:
+    """True if any location in the string is in the US (or remote)."""
+    return bool(_US_NAMES_RE.search(location) or _US_CODES_RE.search(location))
 
 
 # ─────────────────────────── notifications ───────────────────────────
@@ -263,10 +330,16 @@ def notify(text: str, dry_run: bool = False) -> bool:
     return wa or tg
 
 
+def _is_stale(posted: str, max_days: int = 60) -> bool:
+    """Evergreen postings keep their original date (e.g. "1188d ago"); hide those."""
+    m = re.fullmatch(r"(\d+)d ago", posted)
+    return bool(m and int(m.group(1)) > max_days)
+
+
 def format_job(j: Job) -> str:
     where = f"{j.company} · {j.location}" if j.location else j.company
     lines = [f"*{j.title}*", where]
-    if j.posted:
+    if j.posted and not _is_stale(j.posted):
         lines.append(f"Posted {j.posted}")
     lines.append(j.url)
     return "\n".join(lines)
@@ -330,12 +403,19 @@ def run(cfg: dict, dry_run: bool) -> int:
 
         matches = [j for j in jobs if match(j)]
         is_new_company = cid not in state["initialized"]
-        fresh = [j for j in matches if j.key not in state["seen"]]
+        fresh = []
+        for j in matches:
+            if j.key in state["seen"]:
+                state["seen"].setdefault(j.sig, state["seen"][j.key])  # backfill older state
+                continue
+            state["seen"][j.key] = now_iso
+            if j.sig in state["seen"]:      # already sent via another source
+                continue
+            state["seen"][j.sig] = now_iso
+            fresh.append(j)
         print(f"{c['name']:<14} {len(jobs):>4} jobs  {len(matches):>3} match  {len(fresh):>3} new"
               + ("  (first run: baseline)" if is_new_company else ""))
 
-        for j in fresh:
-            state["seen"][j.key] = now_iso
         (first_seen_jobs if is_new_company else new_jobs).extend(fresh)
         if is_new_company:
             state["initialized"].append(cid)
@@ -354,11 +434,11 @@ def run(cfg: dict, dry_run: bool) -> int:
     if (ncfg.get("daily_heartbeat", True)
             and today_et.hour >= ncfg.get("heartbeat_after_hour_et", 9)
             and state["last_heartbeat"] != today_et.date().isoformat()):
-        persistent = [k.split(":", 1)[1] for k, v in state["errors"].items() if v >= 3]
+        failing = sorted(k.split(":", 1)[1] for k in state["errors"])
         hb = (f"✅ Job bot is running. Checked {checked} companies. "
-              f"{len(state['seen'])} matching roles tracked so far.")
-        if persistent:
-            hb += f"\n⚠️ Failing repeatedly (fix or remove in config.yaml): {', '.join(persistent)}"
+              f"{sum(1 for k in state['seen'] if k.startswith('sig:'))} matching roles tracked so far.")
+        if failing:
+            hb += f"\n⚠️ Couldn't check: {', '.join(failing)} (fix or remove in config.yaml)"
         notify(hb, dry_run)
         if not dry_run:
             state["last_heartbeat"] = today_et.date().isoformat()

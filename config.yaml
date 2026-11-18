@@ -40,8 +40,13 @@ filters:
     - '\bdirector\b'
     - 'marketing'                # drops "Product Marketing" roles
 
-  # US-focused: drop postings whose location mentions any of these.
+  # Keep only US (or remote) roles. Set to false to see every country.
+  us_only: true
+
+  # Also drop postings whose location OR title mentions any of these
+  # (catches e.g. "Internship - France" listed under a New York location).
   exclude_locations:
+    - 'france'
     - 'london'
     - 'dublin'
     - 'ireland'
@@ -100,6 +105,11 @@ companies:
 
   # Amazon has its own search feed. `queries` are searched; results still go through the filters above.
   - { name: Amazon, source: amazon, queries: ['product manager intern', 'technical program manager intern'] }
+
+  # Jobright's public daily list of PM internships across hundreds of companies
+  # (github.com/jobright-ai/2026-Product-Management-Internship). Refreshed once a day (~9 PM ET).
+  # Keep this LAST so roles already sent from a company's own feed aren't repeated.
+  - { name: Jobright, source: jobright, repo: jobright-ai/2026-Product-Management-Internship, branch: master }
 
 # ─────────────────────────────────────────────────────────────
 #  Notifications
