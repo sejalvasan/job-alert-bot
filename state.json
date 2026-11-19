@@ -1,13 +1,13 @@
 {
  "error_detail": {
-  "workday:Adobe": "HTTPError: 429 Client Error: Too Many Requests for url: https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s",
-  "workday:NVIDIA": "HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s",
+  "workday:Adobe": "ConnectTimeout: HTTPSConnectionPool(host='adobe.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/adobe/external_experienced/jobs (Caused by ConnectTimeoutError(<HTTPSConnection(host='adobe.wd5.myworkdayjobs.com', port=443) at 0x76c1259b0e00>, 'Connection to adobe.wd5.myworkdayjobs.com timed out. (connect timeout=25)'))",
+  "workday:NVIDIA": "ConnectTimeout: HTTPSConnectionPool(host='nvidia.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs (Caused by ConnectTimeoutError(<HTTPSConnection(host='nvidia.wd5.myworkdayjobs.com', port=443) at 0x76c1259b2090>, 'Connection to nvidia.wd5.myworkdayjobs.com timed out. (connect timeout=25)'))",
   "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 3,
-  "workday:NVIDIA": 3,
-  "workday:Salesforce": 3
+  "workday:Adobe": 4,
+  "workday:NVIDIA": 4,
+  "workday:Salesforce": 4
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -45,6 +45,11 @@
   "jobright:Adobe:6abd88028ff3fb9b3bc7133b": "2026-11-18T03:41:40+00:00",
   "jobright:Amazon:6a722b0b71acd469eeda6576": "2026-11-18T03:41:40+00:00",
   "jobright:Amazon:6a87975925fc4e7ae3daddd7": "2026-11-18T03:41:40+00:00",
+  "jobright:Axos Bank:6ac44ae9372c01f6cd735269": "2026-11-19T09:54:31+00:00",
+  "jobright:Axos Bank:6ac6fbc4372c01f6cd73fc16": "2026-11-19T09:54:31+00:00",
+  "jobright:Axos Bank:6adf8a0d9e3e874dbfbad56e": "2026-11-19T09:54:31+00:00",
+  "jobright:Axos Bank:6ae934a6e50c01a743a87c34": "2026-11-19T09:54:31+00:00",
+  "jobright:Axos Bank:6afe48190324c008a17e6088": "2026-11-19T09:54:31+00:00",
   "jobright:BNY:6abec221d9621c5b28391300": "2026-11-18T03:41:40+00:00",
   "jobright:BNY:6abec22e372c01f6cd725727": "2026-11-18T03:41:40+00:00",
   "jobright:C3 AI:6abffe48372c01f6cd72a001": "2026-11-18T03:41:40+00:00",
@@ -143,6 +148,9 @@
   "sig:amazon|2027 amazon leadership accelerator ala product manager internship|seattle": "2026-11-18T03:41:40+00:00",
   "sig:amazon|product manager technical pmt intern summer 2027|seattle": "2026-11-18T02:33:09+00:00",
   "sig:apexanalytix|product management devops intern summer 2027|greensboro": "2026-11-18T03:41:40+00:00",
+  "sig:axos bank|product intern|edison": "2026-11-19T09:54:31+00:00",
+  "sig:axos bank|product intern|los angeles": "2026-11-19T09:54:31+00:00",
+  "sig:axos bank|product intern|san diego": "2026-11-19T09:54:31+00:00",
   "sig:bny|2027 bny summer internship program product management lake mary fl|lake mary": "2026-11-18T03:41:40+00:00",
   "sig:bny|2027 bny summer internship program product management pittsburgh pa|pittsburgh": "2026-11-18T03:41:40+00:00",
   "sig:c3 ai|ai product manager mba intern summer 2027|redwood city": "2026-11-18T03:41:40+00:00",
