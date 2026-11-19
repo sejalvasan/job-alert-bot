@@ -87,15 +87,40 @@ companies:
   - { name: Airbnb,      source: greenhouse, board: airbnb }
   - { name: Pinterest,   source: greenhouse, board: pinterest }
   - { name: Scale AI,    source: greenhouse, board: scaleai }
+  # Added: well-known PM employers (all feeds confirmed working, Nov 2026)
+  - { name: Duolingo,    source: greenhouse, board: duolingo }
+  - { name: Lyft,        source: greenhouse, board: lyft }
+  - { name: DoorDash,    source: greenhouse, board: doordashusa }
+  - { name: Instacart,   source: greenhouse, board: instacart }
+  - { name: Reddit,      source: greenhouse, board: reddit }
+  - { name: Discord,     source: greenhouse, board: discord }
+  - { name: Dropbox,     source: greenhouse, board: dropbox }
+  - { name: Asana,       source: greenhouse, board: asana }
+  - { name: 'Block (Square, Cash App)', source: greenhouse, board: block }
+  - { name: HubSpot,     source: greenhouse, board: hubspotjobs }
+  - { name: Roblox,      source: greenhouse, board: roblox }
+  - { name: Waymo,       source: greenhouse, board: waymo }
+  - { name: Cloudflare,  source: greenhouse, board: cloudflare }
+  - { name: Datadog,     source: greenhouse, board: datadog }
+  - { name: Airtable,    source: greenhouse, board: airtable }
+  - { name: Brex,        source: greenhouse, board: brex }
+  - { name: Affirm,      source: greenhouse, board: affirm }
+  - { name: Samsara,     source: greenhouse, board: samsara }
+  - { name: MongoDB,     source: greenhouse, board: mongodb }
+  - { name: Gusto,       source: greenhouse, board: gusto }
+  - { name: Twilio,      source: greenhouse, board: twilio }
+  - { name: Chime,       source: greenhouse, board: chime }
 
   # Lever
   - { name: Palantir,    source: lever, board: palantir }
+  - { name: Spotify,     source: lever, board: spotify }
 
   # Ashby
   - { name: OpenAI,      source: ashby, board: openai }
   - { name: Notion,      source: ashby, board: notion }
   - { name: Ramp,        source: ashby, board: ramp }
   - { name: Perplexity,  source: ashby, board: perplexity }
+  - { name: Snowflake,   source: ashby, board: snowflake }
 
   # Workday (big companies). host = the part before /<site> in the careers URL.
   # Not yet confirmed: run --check once and delete any that error.
