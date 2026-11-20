@@ -5,9 +5,9 @@
   "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 6,
-  "workday:NVIDIA": 6,
-  "workday:Salesforce": 6
+  "workday:Adobe": 7,
+  "workday:NVIDIA": 7,
+  "workday:Salesforce": 7
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -99,6 +99,7 @@
   "jobright:Fanatics:6af9ae5df015f35e7418dc15": "2026-11-18T03:41:40+00:00",
   "jobright:FieldPulse:6af7958fe3d8d612bf425236": "2026-11-18T03:41:40+00:00",
   "jobright:Fiskars Group:6aff7ffb72b9be3685292b13": "2026-11-20T00:56:14+00:00",
+  "jobright:Future Mode:6aff8901dd029d798066d4a8": "2026-11-20T07:55:49+00:00",
   "jobright:GoFundMe:6ad80a13e4b94611ab84b3e2": "2026-11-18T20:33:58+00:00",
   "jobright:Great American Insurance Group:6afb66ea5305ed998d91d700": "2026-11-18T03:41:40+00:00",
   "jobright:Great American Insurance Group:6afc826963fb67454cf79329": "2026-11-18T03:41:40+00:00",
@@ -150,7 +151,9 @@
   "jobright:Springs Window Fashions:6a89b3c2cde3717f9e9b88f2": "2026-11-18T03:41:40+00:00",
   "jobright:Springs Window Fashions:6a89b3c5e8b6601d1290a1a6": "2026-11-18T03:41:40+00:00",
   "jobright:Springs Window Fashions:6a89b3c625fc4e7ae3db3d68": "2026-11-18T03:41:40+00:00",
+  "jobright:State Street:6affdc3b865dbcc3f26feee5": "2026-11-20T07:55:49+00:00",
   "jobright:T-Mobile:6af64c62323c531f31e31f23": "2026-11-18T03:41:40+00:00",
+  "jobright:Teradata:6aff8bce6f4ca73dfeb456b0": "2026-11-20T07:55:49+00:00",
   "jobright:TikTok:6a30da6443732c05812e3f5e": "2026-11-18T03:41:40+00:00",
   "jobright:TikTok:6a651cf58d53603449607947": "2026-11-18T03:41:40+00:00",
   "jobright:TikTok:6a88ee484afae74a0834e21a": "2026-11-18T03:41:40+00:00",
@@ -216,6 +219,7 @@
   "sig:fanatics|summer 2027 internship product management intern|seattle": "2026-11-18T03:41:40+00:00",
   "sig:fieldpulse|product intern|dallas": "2026-11-18T03:41:40+00:00",
   "sig:fiskars group|product management intern summer 2027|middleton": "2026-11-20T00:56:14+00:00",
+  "sig:future mode|product management intern|mequon": "2026-11-20T07:55:49+00:00",
   "sig:gofundme|mba product management internship summer 2027|san francisco": "2026-11-18T20:33:58+00:00",
   "sig:great american insurance group|technical product management intern summer 2027|cincinnati": "2026-11-18T03:41:40+00:00",
   "sig:great american insurance group|underwriting product management intern year round|cincinnati": "2026-11-18T03:41:40+00:00",
@@ -274,7 +278,9 @@
   "sig:springs window fashions|product management competitive product assessment intern summer 2027|middleton": "2026-11-18T03:41:40+00:00",
   "sig:springs window fashions|product management dashboard analytic internship summer 2027|middleton": "2026-11-18T03:41:40+00:00",
   "sig:springs window fashions|product management internship summer 2027|middleton": "2026-11-18T03:41:40+00:00",
+  "sig:state street|state street product management team business analyst summer internship 2027|boston": "2026-11-20T07:55:49+00:00",
   "sig:t mobile|summer 2027 data product internship|bellevue": "2026-11-18T03:41:40+00:00",
+  "sig:teradata|ai studio product manager intern|san diego": "2026-11-20T07:55:49+00:00",
   "sig:tiktok|ai product manager intern tiktok product social 2027 summer|san jose": "2026-11-18T03:41:40+00:00",
   "sig:tiktok|methodology product operations project intern tiktok shop us operation 2026 start bs ms|los angeles": "2026-11-18T03:41:40+00:00",
   "sig:tiktok|product management project intern tiktok shop operations 2026 start bs ms|seattle": "2026-11-18T03:41:40+00:00",
