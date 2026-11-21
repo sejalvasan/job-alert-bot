@@ -5,9 +5,9 @@
   "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 10,
-  "workday:NVIDIA": 10,
-  "workday:Salesforce": 1
+  "workday:Adobe": 11,
+  "workday:NVIDIA": 11,
+  "workday:Salesforce": 2
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -160,6 +160,7 @@
   "jobright:SAS:6af8a5564ddfc50167b98c71": "2026-11-18T03:41:40+00:00",
   "jobright:SAS:6af8ad995c0a9086f36133b2": "2026-11-18T03:41:40+00:00",
   "jobright:Salesforce:6b00c43b89d8ca1e849595f8": "2026-11-21T03:32:29+00:00",
+  "jobright:Salesforce:6b00cb4ae0dc961959284562": "2026-11-21T11:41:33+00:00",
   "jobright:Samsung Semiconductor:6afbd05007bef169f5ffdf09": "2026-11-18T03:41:40+00:00",
   "jobright:Samsung Semiconductor:6b0083df3a9a0230ab027f03": "2026-11-20T22:47:52+00:00",
   "jobright:ServiceNow:6af795743ba46d7b6c1686e2": "2026-11-18T03:41:40+00:00",
@@ -191,6 +192,7 @@
   "jobright:TikTok:6aa912dd3387a3d9b67d3983": "2026-11-20T22:47:52+00:00",
   "jobright:TikTok:6ac5774e064da25272e171a3": "2026-11-19T18:43:49+00:00",
   "jobright:TikTok:6aed9158bd2f33eea72d2b31": "2026-11-20T16:31:12+00:00",
+  "jobright:TikTok:6aeeaa1f8022f8ddd319b264": "2026-11-21T11:41:33+00:00",
   "jobright:Travelpro Products, Inc.:6acfc83778d51ae69ce0814b": "2026-11-18T03:41:40+00:00",
   "jobright:U.S. News & World Report:6af78f11c7349029d70970bf": "2026-11-18T03:41:40+00:00",
   "jobright:USAFacts:6aea464e4f991d64376cc70d": "2026-11-18T03:41:40+00:00",
@@ -347,6 +349,7 @@
   "sig:tiktok|product manager intern pgc 2027 summer|san jose": "2026-11-19T18:43:49+00:00",
   "sig:tiktok|product operations intern pgc 2027 summer|los angeles": "2026-11-20T22:47:52+00:00",
   "sig:tiktok|product operations intern pgc 2027 summer|san jose": "2026-11-19T18:43:49+00:00",
+  "sig:tiktok|product operations intern soundon 2027 start|los angeles": "2026-11-21T11:41:33+00:00",
   "sig:tiktok|product operations project intern tiktok platform responsibility teen experiences 2026 start|san jose": "2026-11-18T12:13:04+00:00",
   "sig:tiktok|product strategy and operations project intern pgc 2026 start|los angeles": "2026-11-19T18:43:49+00:00",
   "sig:travelpro products inc|design product management intern|boca raton": "2026-11-18T03:41:40+00:00",
