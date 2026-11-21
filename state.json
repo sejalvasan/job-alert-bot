@@ -5,9 +5,9 @@
   "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 12,
-  "workday:NVIDIA": 12,
-  "workday:Salesforce": 3
+  "workday:Adobe": 13,
+  "workday:NVIDIA": 13,
+  "workday:Salesforce": 4
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -161,6 +161,7 @@
   "jobright:Rivian:6af75c3d82422864006447ae": "2026-11-19T01:58:37+00:00",
   "jobright:SAS:6af8a5564ddfc50167b98c71": "2026-11-18T03:41:40+00:00",
   "jobright:SAS:6af8ad995c0a9086f36133b2": "2026-11-18T03:41:40+00:00",
+  "jobright:SageSure:6ac95412c3a8af9c54a0a4df": "2026-11-21T23:19:32+00:00",
   "jobright:Salesforce:6b00c43b89d8ca1e849595f8": "2026-11-21T03:32:29+00:00",
   "jobright:Salesforce:6b00cb4ae0dc961959284562": "2026-11-21T11:41:33+00:00",
   "jobright:Samsung Semiconductor:6afbd05007bef169f5ffdf09": "2026-11-18T03:41:40+00:00",
@@ -330,6 +331,7 @@
   "sig:residex|product management intern|austin": "2026-11-21T18:15:00+00:00",
   "sig:rf smart|product strategy intern summer 2027|jacksonville": "2026-11-18T03:41:40+00:00",
   "sig:rivian|technical product management intern product management product development spring 2027 co op|palo alto": "2026-11-19T01:58:37+00:00",
+  "sig:sagesure|software product management intern|chicago": "2026-11-21T23:19:32+00:00",
   "sig:salesforce|summer 2027 intern product management|san francisco": "2026-11-21T03:32:29+00:00",
   "sig:samsung semiconductor|product management tools and automation intern|plano": "2026-11-20T22:47:52+00:00",
   "sig:samsung semiconductor|technical product management intern d2c shopping experiences mobile consumer electronics|mountain view": "2026-11-18T03:41:40+00:00",
