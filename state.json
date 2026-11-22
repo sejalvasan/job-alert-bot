@@ -1,13 +1,9 @@
 {
  "error_detail": {
-  "workday:Adobe": "HTTPError: 429 Client Error: Too Many Requests for url: https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s",
-  "workday:NVIDIA": "HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s",
-  "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
+  "workday:Adobe": "HTTPError: 429 Client Error: Too Many Requests for url: https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 13,
-  "workday:NVIDIA": 13,
-  "workday:Salesforce": 4
+  "workday:Adobe": 14
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -307,6 +303,7 @@
   "sig:nvidia|product management mba intern gaming content creation and pc ai summer 2027|santa clara": "2026-11-18T03:41:40+00:00",
   "sig:nvidia|product management mba intern gaming content creation and pc ai summer 2027|us": "2026-11-18T03:41:40+00:00",
   "sig:nvidia|product management mba intern genai data strategy summer 2027|santa clara": "2026-11-20T16:31:12+00:00",
+  "sig:nvidia|product management mba intern genai data strategy summer 2027|us": "2026-11-22T03:17:19+00:00",
   "sig:nvidia|product management mba intern laptop summer 2027|us": "2026-11-18T03:41:40+00:00",
   "sig:nvidia|product management space compute mba intern summer 2027|santa clara": "2026-11-18T03:41:40+00:00",
   "sig:nvidia|product management space compute mba intern summer 2027|us": "2026-11-18T03:41:40+00:00",
@@ -382,6 +379,7 @@
   "workday:NVIDIA:JR2025905": "2026-11-18T03:41:40+00:00",
   "workday:NVIDIA:JR2026707": "2026-11-18T03:41:40+00:00",
   "workday:NVIDIA:JR2026962": "2026-11-18T03:41:40+00:00",
-  "workday:NVIDIA:JR2029628": "2026-11-18T03:41:40+00:00"
+  "workday:NVIDIA:JR2029628": "2026-11-18T03:41:40+00:00",
+  "workday:NVIDIA:JR2029639": "2026-11-22T03:17:19+00:00"
  }
 }
