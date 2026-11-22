@@ -5,9 +5,9 @@
   "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 16,
-  "workday:NVIDIA": 2,
-  "workday:Salesforce": 2
+  "workday:Adobe": 17,
+  "workday:NVIDIA": 3,
+  "workday:Salesforce": 3
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -113,6 +113,7 @@
   "jobright:FieldPulse:6af7958fe3d8d612bf425236": "2026-11-18T03:41:40+00:00",
   "jobright:Fiskars Group:6aff7ffb72b9be3685292b13": "2026-11-20T00:56:14+00:00",
   "jobright:FreshDirect:6b00b40bd1fe3bc162e3e2a7": "2026-11-21T03:32:29+00:00",
+  "jobright:FreshDirect:6b00b41d89d8ca1e84958c41": "2026-11-22T23:47:35+00:00",
   "jobright:Future Mode:6aff8901dd029d798066d4a8": "2026-11-20T07:55:49+00:00",
   "jobright:Gemini:6aada1736956574eac8b6cc7": "2026-11-22T18:38:35+00:00",
   "jobright:General Motors:6aad7a803dbb1f8967cedb27": "2026-11-22T18:38:35+00:00",
