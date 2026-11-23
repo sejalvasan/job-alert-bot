@@ -5,9 +5,9 @@
   "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 17,
-  "workday:NVIDIA": 3,
-  "workday:Salesforce": 3
+  "workday:Adobe": 18,
+  "workday:NVIDIA": 4,
+  "workday:Salesforce": 4
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -191,6 +191,7 @@
   "jobright:Tencent:6a971450246d697dcee033ab": "2026-11-20T22:47:52+00:00",
   "jobright:Teradata:6aff8bce6f4ca73dfeb456b0": "2026-11-20T07:55:49+00:00",
   "jobright:Teradata:6b00e84e2ad6cde5ef24ff18": "2026-11-21T03:32:29+00:00",
+  "jobright:Tesla:6b0389e6754c32e575311ffb": "2026-11-23T04:03:19+00:00",
   "jobright:TikTok:6a30da6443732c05812e3f5e": "2026-11-18T03:41:40+00:00",
   "jobright:TikTok:6a651cf58d53603449607947": "2026-11-18T03:41:40+00:00",
   "jobright:TikTok:6a88ee484afae74a0834e21a": "2026-11-18T03:41:40+00:00",
@@ -217,6 +218,7 @@
   "jobright:Zebra Technologies:6adfcb9e5dc7953215a43088": "2026-11-18T03:41:40+00:00",
   "jobright:Zurn Elkay Water Solutions:6aac67da2e757fcb5c8b56d0": "2026-11-20T16:31:12+00:00",
   "jobright:ai.moms:6afda6d126d1f35210ca64fa": "2026-11-18T20:33:58+00:00",
+  "jobright:ai.moms\u2122:6b038a61adf53adef40e03af": "2026-11-23T04:03:19+00:00",
   "jobright:apexanalytix:6afcc6712ac165125e4cc701": "2026-11-18T03:41:40+00:00",
   "jobright:iCapital:6b0090050f536e0ba7275100": "2026-11-20T22:47:52+00:00",
   "lever:Palantir:2ad0ab10-34c3-410d-883b-8052864a95cd": "2026-11-18T02:33:09+00:00",
@@ -362,6 +364,7 @@
   "sig:tencent|tencent cloud cpaas product management intern|palo alto": "2026-11-20T22:47:52+00:00",
   "sig:teradata|ai studio product manager intern|san diego": "2026-11-20T07:55:49+00:00",
   "sig:teradata|product manager intern agentic developer platform|san diego": "2026-11-21T03:32:29+00:00",
+  "sig:tesla|internship product manager residential energy engineering winter spring 2027|palo alto": "2026-11-23T04:03:19+00:00",
   "sig:tiktok|ai product manager intern tiktok product social 2027 summer|san jose": "2026-11-18T03:41:40+00:00",
   "sig:tiktok|creative product manager intern international advertising creative and brand innovation 2027 summer intern global monetization product and technology 2027 start|san jose": "2026-11-21T18:15:00+00:00",
   "sig:tiktok|creative product operations intern international advertising creative and brand innovation 2027 summer intern global monetization product and technology 2027 start|san jose": "2026-11-21T18:15:00+00:00",
