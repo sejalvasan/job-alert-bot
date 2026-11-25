@@ -5,9 +5,9 @@
   "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 23,
-  "workday:NVIDIA": 9,
-  "workday:Salesforce": 9
+  "workday:Adobe": 24,
+  "workday:NVIDIA": 10,
+  "workday:Salesforce": 10
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -54,7 +54,7 @@
   "lever:Spotify",
   "ashby:Snowflake"
  ],
- "last_heartbeat": "2026-11-24",
+ "last_heartbeat": "2026-11-25",
  "seen": {
   "amazon:Amazon:10499684": "2026-11-18T02:33:09+00:00",
   "amazon:Amazon:10509639": "2026-11-18T02:33:09+00:00",
@@ -166,6 +166,7 @@
   "jobright:NVIDIA:6aff9824b47661ae4a62e33b": "2026-11-20T16:31:12+00:00",
   "jobright:NetApp:6af8956a35427cce9bb2e4c1": "2026-11-18T03:41:40+00:00",
   "jobright:Nikkiso Clean Energy & Industrial Gases:6b062a08460ce5352ae3ebf7": "2026-11-25T04:30:30+00:00",
+  "jobright:Nikkiso Clean Energy & Industrial Gases:6b0650b887d3139cb4fa0991": "2026-11-25T14:52:51+00:00",
   "jobright:Oshkosh Corporation:6b0460e521f0a1e0c849a5b6": "2026-11-24T01:46:23+00:00",
   "jobright:PCB Piezotronics, Inc.:6afccd17d163750294926dac": "2026-11-18T03:41:40+00:00",
   "jobright:ParetoHealth:6ae88d40a2a252e21942745b": "2026-11-24T01:46:23+00:00",
@@ -180,6 +181,7 @@
   "jobright:RF-SMART:6aa06212a2266b538d22ff5f": "2026-11-18T03:41:40+00:00",
   "jobright:Ralph Lauren:6b008b91d1fe3bc162e3c972": "2026-11-20T22:47:52+00:00",
   "jobright:Residex\u00ae:6ae4f60677c09cb3bd4b0918": "2026-11-21T18:15:00+00:00",
+  "jobright:Rivian:6ab1bdbbf9692ca98b04ba22": "2026-11-25T14:52:51+00:00",
   "jobright:Rivian:6af75c3d82422864006447ae": "2026-11-19T01:58:37+00:00",
   "jobright:RoboNexis:6b02ef9df4f339a8f62b3807": "2026-11-22T18:38:35+00:00",
   "jobright:Rubrik:6af37386f6053e296fc7caac": "2026-11-25T04:30:30+00:00",
@@ -202,6 +204,7 @@
   "jobright:Signify:6ae38b01d45dc30fb7d2a669": "2026-11-20T16:31:12+00:00",
   "jobright:Signify:6ae4ffc1eab1f9673097ed14": "2026-11-21T18:15:00+00:00",
   "jobright:Snowflake:6b0619c40e7eacd1ea646171": "2026-11-25T04:30:30+00:00",
+  "jobright:Snowflake:6b06c30b134c107bbeafbae9": "2026-11-25T14:52:51+00:00",
   "jobright:Spira AI:6af7a0e882422864006474a0": "2026-11-18T03:41:40+00:00",
   "jobright:Springs Window Fashions:6a89b3c2cde3717f9e9b88f2": "2026-11-18T03:41:40+00:00",
   "jobright:Springs Window Fashions:6a89b3c5e8b6601d1290a1a6": "2026-11-18T03:41:40+00:00",
