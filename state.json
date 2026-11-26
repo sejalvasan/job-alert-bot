@@ -5,9 +5,9 @@
   "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 25,
-  "workday:NVIDIA": 11,
-  "workday:Salesforce": 11
+  "workday:Adobe": 26,
+  "workday:NVIDIA": 12,
+  "workday:Salesforce": 12
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -174,9 +174,11 @@
   "jobright:NVIDIA:6aff742f6f4ca73dfeb44469": "2026-11-20T00:56:14+00:00",
   "jobright:NVIDIA:6aff9824b47661ae4a62e33b": "2026-11-20T16:31:12+00:00",
   "jobright:NVIDIA:6b073a7afbcb892eea5e19fb": "2026-11-25T23:24:44+00:00",
+  "jobright:NVIDIA:6b076329fbcb892eea5e2aeb": "2026-11-26T05:14:23+00:00",
   "jobright:NetApp:6af8956a35427cce9bb2e4c1": "2026-11-18T03:41:40+00:00",
   "jobright:Nikkiso Clean Energy & Industrial Gases:6b062a08460ce5352ae3ebf7": "2026-11-25T04:30:30+00:00",
   "jobright:Nikkiso Clean Energy & Industrial Gases:6b0650b887d3139cb4fa0991": "2026-11-25T14:52:51+00:00",
+  "jobright:OpenSesame:6b0775b82c2b1d2eebe151cb": "2026-11-26T05:14:23+00:00",
   "jobright:Oshkosh Corporation:6b0460e521f0a1e0c849a5b6": "2026-11-24T01:46:23+00:00",
   "jobright:PCB Piezotronics, Inc.:6afccd17d163750294926dac": "2026-11-18T03:41:40+00:00",
   "jobright:ParetoHealth:6ae88d40a2a252e21942745b": "2026-11-24T01:46:23+00:00",
@@ -189,6 +191,7 @@
   "jobright:Pyrotek:6afe094df170d82b39670b3a": "2026-11-19T01:58:37+00:00",
   "jobright:Pyrotek:6afe2620f170d82b39671bfa": "2026-11-19T01:58:37+00:00",
   "jobright:Q2:6ad13fcd3d3a5aa909b390b2": "2026-11-25T23:24:44+00:00",
+  "jobright:QuEra Computing Inc.:6b0774b220135524ca72ccff": "2026-11-26T05:14:23+00:00",
   "jobright:Qualcomm:6aad86ee6956574eac8b6403": "2026-11-23T14:26:56+00:00",
   "jobright:RF-SMART:6aa06212a2266b538d22ff5f": "2026-11-18T03:41:40+00:00",
   "jobright:Ralph Lauren:6b008b91d1fe3bc162e3c972": "2026-11-20T22:47:52+00:00",
@@ -380,6 +383,7 @@
   "sig:nvidia|product management space compute mba intern summer 2027|us": "2026-11-18T03:41:40+00:00",
   "sig:nvidia|product manager mba intern enterprise ai summer 2027|santa clara": "2026-11-18T03:41:40+00:00",
   "sig:nvidia|product manager mba intern enterprise ai summer 2027|us": "2026-11-18T03:41:40+00:00",
+  "sig:opensesame|product internship summer 2027|united states": "2026-11-26T05:14:23+00:00",
   "sig:oshkosh corporation|product intern summer 2027|new hudson": "2026-11-24T01:46:23+00:00",
   "sig:palantir|forward deployed software engineer internship commercial|chicago": "2026-11-18T02:33:09+00:00",
   "sig:palantir|forward deployed software engineer internship commercial|new york": "2026-11-18T02:33:09+00:00",
@@ -401,6 +405,7 @@
   "sig:pyrotek|intern product management|spokane": "2026-11-19T01:58:37+00:00",
   "sig:q2|2027 summer internship product operations|austin": "2026-11-25T23:24:44+00:00",
   "sig:qualcomm|product management internship summer 2027|san diego": "2026-11-23T14:26:56+00:00",
+  "sig:quera computing inc|internship technical product management|boston": "2026-11-26T05:14:23+00:00",
   "sig:ralph lauren|women s polo sweaters product management intern|new york": "2026-11-20T22:47:52+00:00",
   "sig:residex|product management intern|austin": "2026-11-21T18:15:00+00:00",
   "sig:rf smart|product strategy intern summer 2027|jacksonville": "2026-11-18T03:41:40+00:00",
