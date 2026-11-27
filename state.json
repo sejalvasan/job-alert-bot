@@ -1,11 +1,13 @@
 {
  "error_detail": {
   "workday:Adobe": "HTTPError: 429 Client Error: Too Many Requests for url: https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s",
-  "workday:NVIDIA": "HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
+  "workday:NVIDIA": "HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s",
+  "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 29,
-  "workday:NVIDIA": 15
+  "workday:Adobe": 30,
+  "workday:NVIDIA": 16,
+  "workday:Salesforce": 1
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -52,7 +54,7 @@
   "lever:Spotify",
   "ashby:Snowflake"
  ],
- "last_heartbeat": "2026-11-26",
+ "last_heartbeat": "2026-11-27",
  "seen": {
   "amazon:Amazon:10499684": "2026-11-18T02:33:09+00:00",
   "amazon:Amazon:10509639": "2026-11-18T02:33:09+00:00",
@@ -100,6 +102,7 @@
   "jobright:Clearwater Analytics:6aad98e63dbb1f8967cee7a8": "2026-11-20T16:31:12+00:00",
   "jobright:Clearwater Analytics:6aae0e13de327d3e210d4ed8": "2026-11-19T18:43:49+00:00",
   "jobright:Clearwater Analytics:6aae0e142e757fcb5c8bae85": "2026-11-20T16:31:12+00:00",
+  "jobright:Clearwater Analytics:6af69129af034cc4ddad1762": "2026-11-27T15:37:58+00:00",
   "jobright:Clearwater Analytics:6afd13cae326e9c297f6c5f1": "2026-11-22T18:38:35+00:00",
   "jobright:Clearwater Analytics:6b0501497bec27df08f9587d": "2026-11-24T11:39:23+00:00",
   "jobright:Cloudflare:6ae36a7cd7424a2a828df898": "2026-11-20T16:31:12+00:00",
@@ -204,6 +207,7 @@
   "jobright:QuEra Computing Inc.:6b0774b220135524ca72ccff": "2026-11-26T05:14:23+00:00",
   "jobright:Qualcomm:6aad86ee6956574eac8b6403": "2026-11-23T14:26:56+00:00",
   "jobright:RF-SMART:6aa06212a2266b538d22ff5f": "2026-11-18T03:41:40+00:00",
+  "jobright:ROCKWOOL Group:6ad120a5ae21edea94fd3e3c": "2026-11-27T15:37:58+00:00",
   "jobright:Ralph Lauren:6b008b91d1fe3bc162e3c972": "2026-11-20T22:47:52+00:00",
   "jobright:Residex\u00ae:6ae4f60677c09cb3bd4b0918": "2026-11-21T18:15:00+00:00",
   "jobright:Rivian:6ab1bdbbf9692ca98b04ba22": "2026-11-25T14:52:51+00:00",
@@ -432,6 +436,7 @@
   "sig:rf smart|product strategy intern summer 2027|jacksonville": "2026-11-18T03:41:40+00:00",
   "sig:rivian|technical product management intern product management product development spring 2027 co op|palo alto": "2026-11-19T01:58:37+00:00",
   "sig:robonexis|blu product operations intern|new york": "2026-11-22T18:38:35+00:00",
+  "sig:rockwool group|associate product mgmt intern 1 year duration full time in chicago il|chicago": "2026-11-27T15:37:58+00:00",
   "sig:rubrik|product management intern msp winter 2027|palo alto": "2026-11-25T04:30:30+00:00",
   "sig:rubrik|product management intern rcv summer 2027|palo alto": "2026-11-25T04:30:30+00:00",
   "sig:sagesure|software product management intern|chicago": "2026-11-21T23:19:32+00:00",
