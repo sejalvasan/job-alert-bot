@@ -1,13 +1,11 @@
 {
  "error_detail": {
   "workday:Adobe": "HTTPError: 429 Client Error: Too Many Requests for url: https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s",
-  "workday:NVIDIA": "HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s",
-  "workday:Salesforce": "HTTPError: 429 Client Error: Too Many Requests for url: https://salesforce.wd12.myworkdayjobs.com/wday/cxs/salesforce/External_Career_Site/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
+  "workday:NVIDIA": "HTTPError: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs | body: <!DOCTYPE html>\n<html>\n\n<head>\n    <style>\n        body {\n            text-align: center;\n            margin: 0;\n            height: 100%;\n            width: 100%;\n            font-family: 'Roboto', s"
  },
  "errors": {
-  "workday:Adobe": 28,
-  "workday:NVIDIA": 14,
-  "workday:Salesforce": 14
+  "workday:Adobe": 29,
+  "workday:NVIDIA": 15
  },
  "initialized": [
   "greenhouse:Stripe",
@@ -83,6 +81,7 @@
   "jobright:BSH Home Appliances Corporation - North America:6b00956fdfa58e4c244dc897": "2026-11-20T22:47:52+00:00",
   "jobright:Blackhawk Network:6a95b6b44c22023a079354f5": "2026-11-26T23:54:35+00:00",
   "jobright:Blackhawk Network:6a95b6b69fcec5442372ea03": "2026-11-26T23:54:35+00:00",
+  "jobright:Blackhawk Network:6ad5bff854bbabbab06eee16": "2026-11-27T05:45:05+00:00",
   "jobright:Brilliant Infotech Inc.:6b07473a6c5083822fdc85f4": "2026-11-25T23:24:44+00:00",
   "jobright:Brunswick Corporation:6a8daac2cc0cf2706852456b": "2026-11-20T00:56:14+00:00",
   "jobright:Brunswick Corporation:6a8ddaba47679c68bf5e523d": "2026-11-20T22:47:52+00:00",
